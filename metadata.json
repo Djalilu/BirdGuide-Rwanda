@@ -1,0 +1,8 @@
+{
+  "name": "BirdGuide Rwanda",
+  "description": "An AI-powered assistant to help tourists, students, and enthusiasts identify bird species in Rwanda using photos, sounds, or descriptions.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
