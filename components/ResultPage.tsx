@@ -39,6 +39,14 @@ const ResultPage: React.FC<ResultPageProps> = ({ language, data, resultImage, on
             <div className="p-6 space-y-4">
                 <InfoCard title={T.foundIn}>{data.location}</InfoCard>
                 <InfoCard title={T.description}>{data.description}</InfoCard>
+
+                {data.soundUrl && (
+                    <InfoCard title={T.listenToCall}>
+                        <audio controls className="w-full" src={data.soundUrl}>
+                            Your browser does not support the audio element.
+                        </audio>
+                    </InfoCard>
+                )}
                 
                 <div>
                     <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">{T.funFacts}</h3>

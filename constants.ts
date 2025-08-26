@@ -36,6 +36,7 @@ export const LOCALIZATION: Record<Language, Record<string, string>> = {
     habitat: "Habitat",
     behavior: "Behavior",
     spottingTip: "Spotting Tip",
+    listenToCall: "Listen to its Call",
     birdwatchingLocations: "Top Birdwatching Locations in Rwanda",
     aboutTitle: "About BirdGuide Rwanda",
     aboutText: "This app is your AI-powered companion for discovering the rich avian life of Rwanda. Using state-of-the-art technology, it helps you identify birds from photos, sounds, or simple descriptions. Happy birding!",
@@ -43,6 +44,9 @@ export const LOCALIZATION: Record<Language, Record<string, string>> = {
     error: "Error",
     errorMessage: "Sorry, an error occurred. Please try again.",
     errorNotFound: "Could not identify the bird from the provided input. Please try a clearer photo, sound, or a more detailed description.",
+    keyBirdSpecies: "Key Bird Species",
+    bestTimeToVisit: "Best Time to Visit",
+    gettingThere: "Getting There",
   },
   rw: {
     welcomeTitle: "Murakaza neza kuri BirdGuide Rwanda!",
@@ -67,6 +71,7 @@ export const LOCALIZATION: Record<Language, Record<string, string>> = {
     habitat: "Aho iba",
     behavior: "Imyitwarire",
     spottingTip: "Inama yo kuyibona",
+    listenToCall: "Umva amajwi yayo",
     birdwatchingLocations: "Ahantu heza ho kurebera inyoni mu Rwanda",
     aboutTitle: "Ibyerekeye BirdGuide Rwanda",
     aboutText: "Iyi porogaramu ni umufasha wawe wa AI mu kuvumbura ubuzima bw'inyoni bwinshi bwo mu Rwanda. Ikoresheje ikoranabuhanga rigezweho, igufasha kumenya inyoni mu mafoto, amajwi, cyangwa ibisobanuro byoroshye. Kureba inyoni byiza!",
@@ -74,6 +79,9 @@ export const LOCALIZATION: Record<Language, Record<string, string>> = {
     error: "Ikibazo",
     errorMessage: "Tubabarire, habayeho ikibazo. Ongera ugerageze.",
     errorNotFound: "Ntibishoboye kumenya inyoni mu byo watanze. Gerageza ifoto isobanutse, ijwi, cyangwa ubusobanuro burambuye.",
+    keyBirdSpecies: "Amoko y'ingenzi y'inyoni",
+    bestTimeToVisit: "Igihe cyiza cyo gusura",
+    gettingThere: "Uko wagerayo",
   },
   fr: {
     welcomeTitle: "Bienvenue à BirdGuide Rwanda!",
@@ -96,6 +104,7 @@ export const LOCALIZATION: Record<Language, Record<string, string>> = {
     habitat: "Habitat",
     behavior: "Comportement",
     spottingTip: "Conseil pour l'observation",
+    listenToCall: "Écoutez son chant",
     birdwatchingLocations: "Meilleurs sites d'observation des oiseaux au Rwanda",
     aboutTitle: "À propos de BirdGuide Rwanda",
     aboutText: "Cette application est votre compagnon IA pour découvrir la riche vie aviaire du Rwanda. Grâce à une technologie de pointe, elle vous aide à identifier les oiseaux à partir de photos, de sons ou de simples descriptions. Bonne observation!",
@@ -103,6 +112,9 @@ export const LOCALIZATION: Record<Language, Record<string, string>> = {
     error: "Erreur",
     errorMessage: "Désolé, une erreur est survenue. Veuillez réessayer.",
     errorNotFound: "Impossible d'identifier l'oiseau à partir de l'entrée fournie. Essayez une photo, un son plus clair ou une description plus détaillée.",
+    keyBirdSpecies: "Espèces d'oiseaux clés",
+    bestTimeToVisit: "Meilleur moment pour visiter",
+    gettingThere: "Comment s'y rendre",
   },
   es: {
     welcomeTitle: "¡Bienvenido a BirdGuide Rwanda!",
@@ -125,6 +137,7 @@ export const LOCALIZATION: Record<Language, Record<string, string>> = {
     habitat: "Hábitat",
     behavior: "Comportamiento",
     spottingTip: "Consejo para avistar",
+    listenToCall: "Escucha su canto",
     birdwatchingLocations: "Mejores lugares para observar aves en Ruanda",
     aboutTitle: "Acerca de BirdGuide Rwanda",
     aboutText: "Esta aplicación es su compañera de IA para descubrir la rica vida aviar de Ruanda. Utilizando tecnología de punta, le ayuda a identificar aves a partir de fotos, sonidos o descripciones simples. ¡Feliz avistamiento de aves!",
@@ -132,6 +145,9 @@ export const LOCALIZATION: Record<Language, Record<string, string>> = {
     error: "Error",
     errorMessage: "Lo sentimos, ocurrió un error. Por favor, inténtelo de nuevo.",
     errorNotFound: "No se pudo identificar el ave a partir de la entrada proporcionada. Pruebe con una foto, un sonido más claro o una descripción más detallada.",
+    keyBirdSpecies: "Especies de aves clave",
+    bestTimeToVisit: "Mejor época para visitar",
+    gettingThere: "Cómo llegar",
   },
   de: {
     welcomeTitle: "Willkommen bei BirdGuide Ruanda!",
@@ -154,6 +170,7 @@ export const LOCALIZATION: Record<Language, Record<string, string>> = {
     habitat: "Lebensraum",
     behavior: "Verhalten",
     spottingTip: "Beobachtungstipp",
+    listenToCall: "Hören Sie seinen Ruf",
     birdwatchingLocations: "Top-Vogelbeobachtungsorte in Ruanda",
     aboutTitle: "Über BirdGuide Ruanda",
     aboutText: "Diese App ist Ihr KI-gestützter Begleiter zur Entdeckung der reichen Vogelwelt Ruandas. Mit modernster Technologie hilft sie Ihnen, Vögel anhand von Fotos, Geräuschen oder einfachen Beschreibungen zu identifizieren. Viel Spaß beim Vögelbeobachten!",
@@ -161,6 +178,9 @@ export const LOCALIZATION: Record<Language, Record<string, string>> = {
     error: "Fehler",
     errorMessage: "Entschuldigung, ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
     errorNotFound: "Der Vogel konnte anhand der Eingabe nicht identifiziert werden. Bitte versuchen Sie ein klareres Foto, einen klareren Ton oder eine detailliertere Beschreibung.",
+    keyBirdSpecies: "Wichtige Vogelarten",
+    bestTimeToVisit: "Beste Besuchszeit",
+    gettingThere: "Anreise",
   },
   ar: {
     welcomeTitle: "مرحبًا بك في دليل الطيور في رواندا!",
@@ -183,6 +203,7 @@ export const LOCALIZATION: Record<Language, Record<string, string>> = {
     habitat: "الموطن",
     behavior: "السلوك",
     spottingTip: "نصيحة للرصد",
+    listenToCall: "استمع إلى ندائها",
     birdwatchingLocations: "أفضل مواقع مشاهدة الطيور في رواندا",
     aboutTitle: "حول دليل الطيور في رواندا",
     aboutText: "هذا التطبيق هو رفيقك المدعوم بالذكاء الاصطناعي لاكتشاف حياة الطيور الغنية في رواندا. باستخدام أحدث التقنيات ، يساعدك على التعرف على الطيور من الصور أو الأصوات أو الأوصاف البسيطة. مشاهدة طيور سعيدة!",
@@ -190,6 +211,9 @@ export const LOCALIZATION: Record<Language, Record<string, string>> = {
     error: "خطأ",
     errorMessage: "عذرًا ، حدث خطأ. يرجى المحاولة مرة أخرى.",
     errorNotFound: "تعذر التعرف على الطائر من المدخلات المقدمة. يرجى تجربة صورة أو صوت أوضح أو وصف أكثر تفصيلاً.",
+    keyBirdSpecies: "أنواع الطيور الرئيسية",
+    bestTimeToVisit: "أفضل وقت للزيارة",
+    gettingThere: "كيفية الوصول إلى هناك",
   },
   zh: {
     welcomeTitle: "欢迎来到卢旺达鸟类指南！",
@@ -212,6 +236,7 @@ export const LOCALIZATION: Record<Language, Record<string, string>> = {
     habitat: "栖息地",
     behavior: "行为",
     spottingTip: "观鸟提示",
+    listenToCall: "聆听它的叫声",
     birdwatchingLocations: "卢旺达顶级观鸟地点",
     aboutTitle: "关于卢旺达鸟类指南",
     aboutText: "这个应用程序是您发现卢旺达丰富鸟类生活的人工智能伴侣。它使用最先进的技术，帮助您通过照片、声音或简单的描述来识别鸟类。祝您观鸟愉快！",
@@ -219,6 +244,9 @@ export const LOCALIZATION: Record<Language, Record<string, string>> = {
     error: "错误",
     errorMessage: "抱歉，发生了错误。请重试。",
     errorNotFound: "无法从提供的输入中识别鸟类。请尝试更清晰的照片、声音或更详细的描述。",
+    keyBirdSpecies: "主要鸟类",
+    bestTimeToVisit: "最佳游览时间",
+    gettingThere: "如何到达",
   },
   hi: {
     welcomeTitle: "बर्डगाइड रवांडा में आपका स्वागत है!",
@@ -241,6 +269,7 @@ export const LOCALIZATION: Record<Language, Record<string, string>> = {
     habitat: "वास",
     behavior: "व्यवहार",
     spottingTip: "देखने की युक्ति",
+    listenToCall: "इसका गाना सुनें",
     birdwatchingLocations: "रवांडा में शीर्ष पक्षी देखने के स्थान",
     aboutTitle: "बर्डगाइड रवांडा के बारे में",
     aboutText: "यह ऐप रवांडा के समृद्ध पक्षी जीवन की खोज के लिए आपका एआई-संचालित साथी है। अत्याधुनिक तकनीक का उपयोग करते हुए, यह आपको तस्वीरों, ध्वनियों या सरल विवरणों से पक्षियों की पहचान करने में मदद करता है। खुश पक्षी अवलोकन!",
@@ -248,14 +277,45 @@ export const LOCALIZATION: Record<Language, Record<string, string>> = {
     error: "त्रुटि",
     errorMessage: "क्षमा करें, एक त्रुटि हुई। कृपया पुन: प्रयास करें।",
     errorNotFound: "दिए गए इनपुट से पक्षी की पहचान नहीं हो सकी। कृपया एक स्पष्ट तस्वीर, ध्वनि, या अधिक विस्तृत विवरण का प्रयास करें।",
+    keyBirdSpecies: "प्रमुख पक्षी प्रजातियां",
+    bestTimeToVisit: "यात्रा का सबसे अच्छा समय",
+    gettingThere: "वहाँ कैसे पहुँचें",
   }
 };
 
 export const BIRD_LOCATIONS: LocationInfo[] = [
-    { name: "Nyungwe Forest National Park", description: "Home to over 300 bird species, including many Albertine Rift endemics.", image: "https://picsum.photos/seed/nyungwe/400/200" },
-    { name: "Akagera National Park", description: "A savanna park with diverse habitats, great for water birds and savanna species.", image: "https://picsum.photos/seed/akagera/400/200" },
-    { name: "Rugezi Marsh", description: "An important wetland area, known for Grauer's Swamp Warbler and other rare species.", image: "https://picsum.photos/seed/rugezi/400/200" },
-    { name: "Kigali Wetlands", description: "Accessible urban birding spots like Nyarutarama Lake offer surprising diversity.", image: "https://picsum.photos/seed/kigali/400/200" },
+    { 
+        name: "Nyungwe Forest National Park", 
+        description: "A montane rainforest paradise, home to over 300 bird species, including 29 Albertine Rift endemics. Walk the breathtaking canopy bridge for a bird's-eye view of the Great Blue Turaco and Ruwenzori Turaco.", 
+        image: "https://images.unsplash.com/photo-1586326325936-236022b79379?q=80&w=1974&auto=format&fit=crop",
+        keyBirds: ["Great Blue Turaco", "Ruwenzori Turaco", "Red-collared Babbler", "Kungwe Apalis", "Shelley's Crimsonwing"],
+        bestTime: "The dry seasons (June-September and December-February) are best for hiking trails. However, birding is excellent year-round, with migratory birds present from November to April.",
+        gettingThere: "Located in southwestern Rwanda, it's about a 4-5 hour drive from Kigali. Access is via a well-paved road. It's recommended to hire a 4x4, especially if exploring side trails."
+    },
+    { 
+        name: "Akagera National Park", 
+        description: "Classic African savanna meets vast wetlands. Search for the elusive Shoebill Stork by boat on Lake Ihema, and spot raptors, kingfishers, and savanna birds from a 4x4. A truly diverse birding hotspot.", 
+        image: "https://images.unsplash.com/photo-1601755823901-71d530663a8e?q=80&w=1935&auto=format&fit=crop",
+        keyBirds: ["Shoebill Stork", "African Fish Eagle", "Papyrus Gonolek", "Red-faced Barbet", "Lilac-breasted Roller"],
+        bestTime: "The dry season (June-September) is ideal as animals congregate around water sources, making them easier to spot. The wet season (November-April) is lush and green, with many migratory birds.",
+        gettingThere: "About a 2.5-hour drive east of Kigali. The park is accessible to 2WD vehicles in the dry season, but a 4x4 is recommended for full access. Boat trips on Lake Ihema must be booked in advance."
+    },
+    { 
+        name: "Rugezi Marsh", 
+        description: "A vast, protected peat bog, crucial for conservation and a designated Ramsar site. It's the best place in the world to find the rare Grauer's Swamp Warbler, along with other wetland specialists like the Grey Crowned Crane.", 
+        image: "https://images.unsplash.com/photo-1596700128359-24736f893707?q=80&w=1974&auto=format&fit=crop",
+        keyBirds: ["Grauer's Swamp Warbler", "Grey Crowned Crane", "White-winged Swamp Warbler", "Papyrus Canary", "Carruthers's Cisticola"],
+        bestTime: "Birding is rewarding all year. The drier months (June-September) make access easier. Be prepared for wet conditions at any time. Early morning is the most active time for birds.",
+        gettingThere: "Located in northern Rwanda, near the towns of Musanze and Gicumbi. It requires a 4x4 vehicle and a local guide is essential for navigating the marsh and finding the key species. Arrange guides through local tour operators."
+    },
+    { 
+        name: "Kigali Wetlands", 
+        description: "Discover a surprising wealth of birdlife without leaving the capital. Wetlands like Nyarutarama Lake offer easy and accessible birding, where you can spot African Fish Eagles, Malachite Kingfishers, and various weavers.", 
+        image: "https://images.unsplash.com/photo-1605896356019-3d16154564c4?q=80&w=1935&auto=format&fit=crop",
+        keyBirds: ["African Fish Eagle", "Malachite Kingfisher", "Black-headed Weaver", "White-browed Coucal", "Spur-winged Goose"],
+        bestTime: "Year-round. Early mornings or late afternoons are best for bird activity. A walk around Nyarutarama Lake (near the golf course) can be done in a couple of hours and is highly rewarding.",
+        gettingThere: "Easily accessible within Kigali city. Nyarutarama and other urban wetlands like Umusambi Village can be reached by car, moto-taxi, or even on foot depending on your location. No special vehicle is needed."
+    },
 ];
 
 export const RESPONSE_SCHEMA = {
@@ -275,6 +335,7 @@ export const RESPONSE_SCHEMA = {
       required: ["diet", "habitat", "behavior"]
     },
     spottingTip: { type: Type.STRING },
+    soundUrl: { type: Type.STRING, description: "A direct URL to a representative MP3 audio file of the bird's song from a public database like xeno-canto.org. If no suitable public domain sound is found, leave this field empty." },
     error: { type: Type.STRING, description: "Set only if the bird cannot be identified." },
   },
   required: ["birdName", "scientificName", "location", "description", "funFacts", "spottingTip"]

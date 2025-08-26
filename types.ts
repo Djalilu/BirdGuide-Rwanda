@@ -1,5 +1,5 @@
 export type Language = string;
-export type Page = 'home' | 'result' | 'locations' | 'about';
+export type Page = 'home' | 'result' | 'locations' | 'about' | 'locationDetail';
 export type InputMode = 'photo' | 'sound' | 'text';
 export type Theme = 'light' | 'dark';
 
@@ -16,6 +16,7 @@ export interface BirdData {
   description: string;
   funFacts: FunFacts;
   spottingTip: string;
+  soundUrl?: string;
   error?: string;
 }
 
@@ -23,6 +24,9 @@ export interface LocationInfo {
   name: string;
   description: string;
   image: string;
+  keyBirds: string[];
+  bestTime: string;
+  gettingThere: string;
 }
 
 export interface LanguageOption {

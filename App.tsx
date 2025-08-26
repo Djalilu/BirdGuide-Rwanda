@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import { Language, Page, BirdData, InputMode, Theme } from './types';
+import { Language, Page, BirdData, InputMode, Theme, LocationInfo } from './types';
 import { LOCALIZATION } from './constants';
 import { identifyBird, generateBirdImage } from './services/geminiService';
 import Header from './components/Header';
@@ -7,6 +7,7 @@ import HomePage from './components/HomePage';
 import ResultPage from './components/ResultPage';
 import LocationsPage from './components/LocationsPage';
 import AboutPage from './components/AboutPage';
+import LocationDetailPage from './components/LocationDetailPage';
 
 const App: React.FC = () => {
   const [language, setLanguage] = useState<Language>('en');
@@ -16,6 +17,7 @@ const App: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [birdData, setBirdData] = useState<BirdData | null>(null);
   const [resultImage, setResultImage] = useState<string | undefined>(undefined);
+  const [selectedLocation, setSelectedLocation] = useState<LocationInfo | null>(null);
 
   useEffect(() => {
     const root = window.document.documentElement;
@@ -76,6 +78,11 @@ const App: React.FC = () => {
     }
   }, [language]);
 
+  const handleLocationSelect = (location: LocationInfo) => {
+    setSelectedLocation(location);
+    setCurrentPage('locationDetail');
+  };
+
   const renderPage = () => {
     switch (currentPage) {
       case 'home':
@@ -83,7 +90,9 @@ const App: React.FC = () => {
       case 'result':
         return birdData ? <ResultPage language={language} data={birdData} onBack={() => {setCurrentPage('home'); setBirdData(null); setError(null); setResultImage(undefined);}} resultImage={resultImage} /> : <HomePage language={language} onIdentify={handleIdentification} isLoading={isLoading} error={error} />;
       case 'locations':
-        return <LocationsPage language={language} />;
+        return <LocationsPage language={language} onSelectLocation={handleLocationSelect} />;
+      case 'locationDetail':
+        return selectedLocation ? <LocationDetailPage language={language} location={selectedLocation} onBack={() => { setCurrentPage('locations'); setSelectedLocation(null); }} /> : <LocationsPage language={language} onSelectLocation={handleLocationSelect} />;
       case 'about':
         return <AboutPage language={language} />;
       default:
