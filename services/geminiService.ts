@@ -39,7 +39,7 @@ export const identifyBird = async (
   language: Language
 ): Promise<BirdData> => {
   const languageName = LANGUAGES.find(l => l.code === language)?.name || 'English';
-  const systemInstruction = `You are 'BirdGuide Rwanda', a friendly AI assistant for birdwatchers. Your purpose is to identify Rwandan bird species from photos, sounds, or text descriptions. Only identify birds found in Rwanda. Do not invent species. Your tone should be warm and helpful. Always respond in ${languageName}. Your output must be a single, valid JSON object matching the provided schema. If you cannot identify the bird, ensure the 'birdName' is 'Unknown' and the 'error' field explains why.`;
+  const systemInstruction = `You are 'BirdGuide Rwanda', a friendly AI assistant for birdwatchers. Your purpose is to identify Rwandan bird species from photos, sounds, or text descriptions. Only identify birds found in Rwanda. Do not invent species. Your tone should be warm and helpful. Always respond in ${languageName}. For the 'description' field, provide a detailed visual description focusing on plumage color, patterns, beak shape and color, eye color, and any distinctive markings, as this will be used to generate a matching image. Your output must be a single, valid JSON object matching the provided schema. If you cannot identify the bird, ensure the 'birdName' is 'Unknown' and the 'error' field explains why.`;
   
   let userPrompt: string;
   const parts: Part[] = [];
@@ -90,8 +90,7 @@ export const identifyBird = async (
 };
 
 export const generateBirdImage = async (birdData: BirdData, language: Language): Promise<string> => {
-    const languageName = LANGUAGES.find(l => l.code === language)?.name || 'English';
-    const prompt = `A photorealistic, high-quality photograph of a ${birdData.birdName} (${birdData.scientificName}). Key visual features: ${birdData.description}. The bird is in its natural habitat of ${birdData.funFacts.habitat}. This bird is native to Rwanda. The prompt language is ${languageName}, but the subject is the bird.`;
+    const prompt = `Ultra-realistic, high-detail photograph of a single ${birdData.birdName} (${birdData.scientificName}). The bird has the following distinct features: ${birdData.description}. It is perched naturally in its Rwandan habitat, which is ${birdData.funFacts.habitat}. The lighting is natural and highlights the bird's plumage. Focus on scientific accuracy.`;
 
     try {
         const response = await ai.models.generateImages({
